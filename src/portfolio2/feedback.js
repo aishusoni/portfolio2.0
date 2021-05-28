@@ -37,7 +37,7 @@ const Feed=({navopn})=>{
                 <textarea name="Comment" value={fd.Comment} onChange={changedFd}/>
                 </p>
                 <p>
-                <button type="submit">Submit</button>
+                <button className="btn btn-btn-Dark subtn" type="submit">Submit</button>
                 </p>
             </form>
             <table>
@@ -47,13 +47,13 @@ const Feed=({navopn})=>{
                 {list.map((item)=>{
                     return(
                         <tr>
-                            <td>
+                            <td >
                                 {item.Name}
                             </td>
                             <td>
                                 {item.Email}
                             </td>
-                            <td>
+                            <td >
                                 {item.Comment}
                             </td>
                         </tr>

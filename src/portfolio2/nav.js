@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,9 +7,11 @@ import {
     useRouteMatch,
     useParams
   } from "react-router-dom";
-
+ 
+  
 const Nav=()=>{
     return(
+        <>
         <ul>
             <li>
                 <Link className="Link" to="/">About me</Link>
@@ -29,7 +31,9 @@ const Nav=()=>{
             <li>
                 <Link className="Link" to="/Feed">Feedback</Link>
             </li>
+            
         </ul>
+        </>
     );
 }
 
