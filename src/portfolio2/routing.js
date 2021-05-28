@@ -23,7 +23,7 @@ const Routing=()=>{
             <button className="btn btn-dark navbtn" onClick={()=>{setOpen(!open)}}> ≡ </button>
             {open && <Nav />}
             <Switch>
-                <Route exact path='/portfolio2.0'>
+                <Route exact path='/portfolio2.0/'>
                     <Intro navopn={open}/>
                 </Route>
                 <Route path='/Education'>
