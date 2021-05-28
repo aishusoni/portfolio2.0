@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html{
+    scroll-behavior: smooth;
+  }
+  .body{
+    font-family: "Roboto Condensed" sans-serif;
+
+    /* display: flex; */
+    
+    /* text-align: center; */
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+  :root{
+    --primary-black: rgb(0, 0, 0);
+    --primary-white: rgb(255, 255, 255);
+    --primary-blue: #1c2341;
+  }
+  .navbtn{
+    /* padding: 5px; */
+    position: fixed;
+    z-index: 1;
+    margin-top: 0rem !important;
+    width: 3rem;
+    background-color: aliceblue !important;
+    color: #040d2d !important;
+    font-size: 1.28rem !important;
+    
+  }
+
+  .intro,.Educat,.Exp,.Achi,.skills,.error,.Feed{
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+    background-color: #040d2d;
+    color: aliceblue;
+    padding-left:2.5rem;
+  }
+  /* .intro{
+    padding-top: 2rem;
+  } */
+  ul {
+    z-index: 0;
+    position: fixed;
+    list-style-type: none;
+    padding-top: 1.8rem !important;
+    padding: 0;
+    width: 22%;
+    background-color: #05668d;
+    height: 925px;
+    letter-spacing: 0.125rem;
+  }
+  
+  li .Link  {
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  li .Link.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li:hover:not(.active) {
+    background-color: white;
+    color: white;
+  }
+  .personame{
+    font-size: 100px ;
+    margin-left: -0.25rem;
+  }
+  .abtme{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5rem;
+    letter-spacing: 0.115rem;
+
+  }
+  .intro{
+    /* filter: blur(4px);
+   -webkit-filter: blur(0px); */
+    /* height: 100% !important; */
+    min-height: 925px !important;
+    padding-right: 1rem;
+  }
+.thngs{
+  margin-top:3rem ;
+  text-align: center;
+  color: #515669;
+}
+.skills{
+  min-height:925px ;
+}
+  .robox{
+    /* padding: 2rem 2rem !important; */
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background-color: #040d2d;
+    color: #05668d;
+    height: 10rem !important;
+    cursor: pointer;
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+  }
+  /* @media(max-width: 810px)
+  {
+    ul{
+      width:10rem;
+    }
+
+  } */
+
+
+  .row{
+    /* margin-left:15px !important;
+    margin-right:15px !important; */
+    /* z-index: 3; */
+    width:95% !important;
+    margin-left: 0px !important;
+    margin-right: auto !important;
+  }
+  .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row2{
+    /* margin-left:15px !important;
+    margin-right:15px !important; */
+    /* z-index: 3; */
+    width:95% !important;
+    margin-left: 1.35% !important;
+    /* margin-right: auto !important; */
+  }
+  .row2:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .coloumn {
+    /* z-index: 3; */
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size:22px;
+    color: #05668d;
+    float: left;
+    width: 33.33%;
+    /* background-color: #f0f3bd; */
+    height: 100px; 
+  }
+  .coloumn2{
+    /* z-index: 3; */
+
+    margin-top: 3rem;
+    padding-top: 5rem !important;
+    /* text-align: center; */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #05668d;
+    float: left;
+    width: 50%;
+    /* background-color: #f0f3bd; */
+    height: 290px; 
+  }
+  .b2,.a2{
+    padding-top: 3rem !important;
+    height: 390px;
+  }
+  
+  .eduname{
+    font-size: 100px;
+  }
+  .Educat{
+    min-height: 925px !important;
+  }
+  .sku{
+    margin-top: 1rem;
+    color: #515669;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  .skuin{
+    letter-spacing: 0.115rem;
+    font-family : 'Open Sans', sans-serif;
+  }
+  @media (max-width:330px) {
+    .personame{
+      font-size: 4rem !important;
+      margin-left: -0.65rem;
+    }
+    .eduname{
+      font-size: 2.75rem !important;
+      padding-top: 0.5rem;
+    }
+    .ac{
+      font-size: 2rem !important;
+      margin-right: 1.5rem !important;
+    }
+    .educlass{
+      font-size: 1.3rem !important;
+    }
+    .b2{
+      height: 520px !important;
+    }
+    .Educat{
+      min-height: 800px !important;
+    }
+
+    .skcmt{
+      font-size: 1rem !important;
+    }
+
+  }
+  
+  .expbtn{
+    margin-top: 3rem;
+    color: aliceblue !important;
+    background-color: #05668d !important;
+  }
+
+ @media(max-width: 815px){
+   ul{
+     width: 10rem;
+
+   }
+   .intro,.Educat,.Exp,.Achi,.skills{
+     margin-left: 0rem !important;
+     text-align: center !important;
+     padding-top: 2rem !important;
+     width: 100% !important;
+     /* display: flex; */
+    /* justify-content: center; */
+   }
+   .coloumn,.coloumn2{
+     width: 100%;
+     margin-top: 0rem !important;
+   }
+   .personame{
+     font-size: 80px;
+   }
+   .eduname{
+     font-size: 60px;
+     text-align: center;
+     margin-left: -1rem !important;
+   }
+   .intro{
+     padding-left:1rem ;
+   }
+   .Educat{
+     padding-left: 1rem;
+   }
+   .coloumn2{
+     padding-top: 1rem !important;
+     text-align: center !important;
+   }
+   .row2{
+     margin-left: -8px !important;
+     width:100% !important;
+     /* margin-left: 1.35% !important; */
+   }
+   .a{
+      height: 100px;
+   }
+   .b{
+     height: 350px;
+   }
+   .b2{
+     height: 420px;
+   }
+   .skh{
+    margin-left: -2.6rem;
+  }
+  .skcmt{
+    font-size: 2rem;
+    color: #05668d;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -2.6rem;
+  }
+  .expbtn{
+    margin-left: -2.6rem;
+  }
+  .sku{
+    margin-left: -2.6rem;
+  }
+  .skuin{
+    margin-left: -2.6rem;
+  }
+ }
+  
+  
