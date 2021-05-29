@@ -124,13 +124,13 @@ html{
   } */
 
   table, th, td,tr {
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 0.5rem;
     text-align: center;
     margin-top: 5rem;
   }
   table{
-    width: 100%;
+    width: 95%;
   }
   .subtn{
     margin-top: 3rem;
@@ -140,7 +140,7 @@ html{
     margin-left: 40%;
   }
   textarea {
-    width: 100%;
+    width: 95%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -152,6 +152,9 @@ html{
   input[type=text] {
     background-color: #f8f8f8;
     color: white;
+  }
+  footer{
+    margin-left: -2rem;
   }
   .row{
     /* margin-left:15px !important;
@@ -270,6 +273,19 @@ html{
   .skcmt{
     font-size: 1.5rem !important;
   }
+  textarea{
+    margin-left: -0.7rem !important;
+  }
+  .subtn{
+    margin-left: 30%!important;
+  }
+  table{
+    margin-left: -0.7rem !important;
+  }
+  footer{
+    margin-left: -3rem !important;
+    font-size: 0.8rem !important;
+  }
  }
  @media(max-width: 815px){
    ul{
@@ -277,12 +293,15 @@ html{
 
    }
    .intro,.Educat,.Exp,.Achi,.skills{
-     margin-left: 0rem !important;
+    margin-left: 0rem !important;
      text-align: center !important;
      padding-top: 2rem !important;
      width: 100% !important;
      /* display: flex; */
     /* justify-content: center; */
+   }
+   .Feed{
+    margin-left: 0rem !important;
    }
    .coloumn,.coloumn2{
      width: 100%;

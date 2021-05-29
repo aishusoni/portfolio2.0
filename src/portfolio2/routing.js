@@ -15,16 +15,46 @@ import Educat from './educat';
 import Exp from './exp';
 import Feed from './feedback';
 
-
 const Routing=()=>{
     const [open,setOpen]=useState(false);
     return (
         <Router>
-            <button className="btn btn-dark navbtn" onClick={()=>{setOpen(!open)}}> ≡ </button>
-            {open && <Nav />}
+            <button className="btn btn-dark navbtn" onClick={()=>{setOpen(!open)}}
+            // onFocus={() => {setOpen(!open)}}
+            > ≡ </button>
+            {/* <Nav navopn={open}/> */}
+            <div className="navu" 
+            onClick={()=>{setOpen(!open)}}
+            onBlur={() => {setOpen(false)}}
+            onFocus={() => {setOpen(true)}}
+            >
+                {console.log(open)}
+                {open && (
+                <ul onFocus={() => {setOpen(true)}}>
+                <li>
+                    <Link className="Link" to="/portfolio2.0/">About me</Link>
+                </li>
+                <li>
+                    <Link className="Link" to="/Education">Education</Link>
+                </li>
+                <li>
+                    <Link className="Link" to="/Achievement">Achievements</Link>
+                </li>
+                <li>
+                    <Link className="Link" to="/Exp">Experience</Link>
+                </li>
+                <li>
+                    <Link className="Link" to="/Skills">Skills</Link>
+                </li>
+                <li>
+                    <Link className="Link" to="/Feed">Feedback</Link>
+                </li>
+                </ul>
+                )}
+            </div>
             <Switch>
-                <Route exact path='/portfolio2.0/'>
-                    <Intro navopn={open}/>
+                <Route exact path='/portfolio2.0/' >
+                    <Intro navopn={open} />
                 </Route>
                 <Route path='/Education'>
                     <Educat navopn={open}/>

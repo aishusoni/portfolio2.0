@@ -34,7 +34,7 @@ const Feed=({navopn})=>{
                 </p>
                 <p>
                 <label>Comments:&nbsp;&nbsp;</label>
-                <textarea name="Comment" value={fd.Comment} onChange={changedFd}/>
+                <textarea  name="Comment" value={fd.Comment} onChange={changedFd}/>
                 </p>
                 <p>
                 <button className="btn btn-btn-Dark subtn" type="submit">Submit</button>

@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react';
 import resumeData from './resumeData';
+
+
 const DataContext = React.createContext(resumeData);
 
 const Intro=({navopn})=>{
@@ -9,9 +11,11 @@ const Intro=({navopn})=>{
         setCount(1);
     }
     return (
+        <div >
         <div className="intro" style={{
             marginLeft:navopn ? "20%" : "0rem",
         }}>
+            
             <h1 className="personame">{data.name}</h1>
             <p className="abtme">{data.aboutme}</p>
             <h3 className="thngs">THINGS I WANT YOU TO FOCUS ON</h3>
@@ -31,6 +35,7 @@ const Intro=({navopn})=>{
                 })
             }
             </div>
+        </div>
         </div>
     );
 }
